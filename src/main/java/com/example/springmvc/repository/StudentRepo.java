@@ -15,35 +15,27 @@ public interface StudentRepo extends JpaRepository<Student,Long> {
 
 
     Student save(Student student);
-    void delete(Long id);
+    void deleteById(Long id);
     Optional<Student> findById(Long id);
 
 
-    List<Student> findByName(String name);
-    List<Student> findByNameContaining(String name);
-    List<Student> findByNameStartingWith(String name);
-    List<Student> findByNameEndingWith(String name);
-    List<Student> findByNameIgnoreCase(String name);
-    List<Student> findByNameAndMobileNo(String name, String mobileNo);
-    long countByName(String name);
-    boolean existsByMobileNo(String mobileNo);
-
-
+//    List<Student> findByName(String studentName);
+//    List<Student> findByNameContaining(String studentName);
+//    List<Student> findByNameStartingWith(String studentName);
+//    List<Student> findByNameEndingWith(String studentName);
+//    List<Student> findByNameIgnoreCase(String studentName);
+//    long countByName(String studentName);
+//
     @Query("select s from Student s")
     List<Student> getAllStudents();
-
-    // get student by id
-    @Query("select s from Student s where s.id=:id")
-    Student getStudent(@Param("id") int id);
-
-    // JPQL
-//    @Query("select s from Student s join fetch s.courseList where s.id=:id")
-//    Student getStudentWithCourseList(@Param("id") Long id);
-
-//    @Query("select s.courseList from Student s where s.id=:id")
-//    List<Course> getCourseList(@Param("id") Long id);
-
-    @Query("select count(s) from Student s")
-    long totalStudents();
+//
+//    // get student by id
+//    @Query("select s from Student s where s.id=:id")
+//    Student getStudent(@Param("id") Long id);
+//
+//
+//
+//    @Query("select count(s) from Student s")
+//    long totalStudents();
 
 }

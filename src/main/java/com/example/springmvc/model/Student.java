@@ -4,9 +4,11 @@ package com.example.springmvc.model;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+@Entity
 @Component
 public class Student {
 
@@ -20,9 +22,6 @@ public class Student {
     String email;
 
     String gender;
-
-    @Column(name = "selected_course")
-    String selectedCourse;
 
     String address;
 
@@ -56,14 +55,6 @@ public class Student {
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getSelectedCourse() {
-        return selectedCourse;
-    }
-
-    public void setSelectedCourse(String selectedCourse) {
-        this.selectedCourse = selectedCourse;
     }
 
     public String getAddress() {

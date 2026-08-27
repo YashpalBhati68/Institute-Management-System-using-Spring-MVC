@@ -21,9 +21,9 @@
 
 <%-- Student card  --%>
 <div class="card" style="width: 18rem;">
-  <img  src="${pageContext.request.contextPath}/resources/images/student.png" class="card-img-top" alt="...">
+  <img  src="/Institute-Managment-System-Spring-mvc/resources/images/student.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/students" class="btn btn-primary">Go somewhere</a>
+    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/students" class="btn btn-primary">Manage Student</a>
   </div>
 </div>
 
@@ -31,7 +31,7 @@
 <div class="card" style="width: 18rem;">
   <img  src="/Institute-Managment-System-Spring-mvc/resources/images/course.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/courses" class="btn btn-primary">Go somewhere</a>
+    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/courses" class="btn btn-primary">Manage Course</a>
   </div>
 </div>
 
@@ -39,7 +39,7 @@
 <div class="card" style="width: 18rem;">
   <img  src="/Institute-Managment-System-Spring-mvc/resources/images/trainer.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/trainers" class="btn btn-primary">Go somewhere</a>
+    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/trainers" class="btn btn-primary">Manage Trainer</a>
   </div>
 </div>
 
@@ -47,7 +47,7 @@
 <div class="card" style="width: 18rem;">
   <img  src="/Institute-Managment-System-Spring-mvc/resources/images/enrollment.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/enrollments" class="btn btn-primary">Go somewhere</a>
+    <a href="http://localhost:8080/Institute-Managment-System-Spring-mvc/enrollments" class="btn btn-primary">Manage Enrollement</a>
   </div>
 </div>
 

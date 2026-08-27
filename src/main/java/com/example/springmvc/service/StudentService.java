@@ -45,31 +45,25 @@ public class StudentService {
     }
 
 
-    public List<Student> fetchByName(String name){
-        return  studentRepo.findByName(name);
-    }
-    public List<Student> fetchByNameContaining(String name){
-        return studentRepo.findByNameContaining(name);
-    }
-    public List<Student> fetchByNameStartingWith(String name){
-        return studentRepo.findByNameStartingWith(name);
-    }
-    public List<Student> fetchByNameEndingWith(String name){
-        return studentRepo.findByNameEndingWith(name);
-    }
-    public List<Student> fetchByNameIgnoreCase(String name){
-        return studentRepo.findByNameIgnoreCase(name);
-    }
-    public List<Student> fetchByNameAndMobileNo(String name, String mobileNo){
-        return studentRepo.findByNameAndMobileNo(name,mobileNo);
-    }
-    public Long countsByName(String name){
-        return studentRepo.countByName(name);
-    }
-    public boolean existsByMobileNos(String mobileNo){
-        return  studentRepo.existsByMobileNo(mobileNo);
-    }
-
+//    public List<Student> fetchByName(String studentName){
+//        return  studentRepo.findByName(studentName);
+//    }
+//    public List<Student> fetchByNameContaining(String studentName){
+//        return studentRepo.findByNameContaining(studentName);
+//    }
+//    public List<Student> fetchByNameStartingWith(String studentName){
+//        return studentRepo.findByNameStartingWith(studentName);
+//    }
+//    public List<Student> fetchByNameEndingWith(String studentName){
+//        return studentRepo.findByNameEndingWith(studentName);
+//    }
+//    public List<Student> fetchByNameIgnoreCase(String studentName){
+//        return studentRepo.findByNameIgnoreCase(studentName);
+//    }
+//    public Long countsByName(String studentName){
+//        return studentRepo.countByName(studentName);
+//    }
+//
     public List<Student> getsAllStudents(){
         return studentRepo.getAllStudents();
     }

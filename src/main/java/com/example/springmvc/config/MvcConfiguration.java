@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = "com.example.springmvc.controller")
+@ComponentScan(basePackages = "com.example.springmvc")
 @EnableJpaRepositories(basePackages = "com.example.springmvc.repository")
 @EnableWebMvc
 public class MvcConfiguration implements WebMvcConfigurer{

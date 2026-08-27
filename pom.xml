@@ -24,7 +24,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
-      <version>5.3.28</version>
+      <version>5.3.29</version>
       <!--<type>jar</type>
       <scope>compile</scope>-->
     </dependency>
@@ -32,13 +32,13 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>5.4.20.Final</version>
+      <version>5.6.15.Final</version>
     </dependency>
 
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-entitymanager</artifactId>
-      <version>5.4.20.Final</version>
+      <version>5.6.15.Final</version>
     </dependency>
 
     <dependency>

@@ -1,14 +1,16 @@
 <html>
   <body>
-     <form method="POST" action="/Institute-Managment-System-Spring-mvc/students">
+     <form method="POST" action="/Institute-Managment-System-Spring-mvc/students/save">
+
+        <input type="hidden" name="id" value="${student.id}">
 
         <label for="studentName">Full Name:</label>
-        <input type="text" id="studentName" name="studentName" required placeholder="Enter full name">
+        <input type="text" id="studentName" name="studentName" value="${student.studentName}" required placeholder="Enter full name">
         <br/>
            <br/>
 
         <label for="studentEmail">Email Address:</label>
-        <input type="email" id="studentEmail" name="studentEmail" required placeholder="Enter email">
+        <input type="email" id="studentEmail" name="email" value="${student.email}" required placeholder="Enter email">
 <br/>
    <br/>
         <label>Gender:</label>
@@ -19,22 +21,19 @@
                 <label for="female">Female</label>
          <%--   </div>  --%>
 <br/>
-   <br/>
-        <label for="course">Selected Course:</label>
-            <select id="course" name="course">
-                 <option value="Computer Science">Computer Science</option>
-                  <option value="Information Technology">Information Technology</option>
-                  <option value="Business Administration">Business Administration</option>
-                  <option value="Mechanical Engineering">Mechanical Engineering</option>
-            </select>
-<br/>
-   <br/>
+  <br/>
         <label for="address">Permanent Address:</label>
-        <textarea id="address" name="address" rows="4" placeholder="Enter full address"></textarea>
+        <textarea id="address" name="address" rows="4" placeholder="Enter full address">${student.address}</textarea>
 <br/>
    <br/>
-        <button type="submit">Submit Registration</button>
+        <button type="submit">Registrated</button>
 
      </form>
+ <br/>
+    <br/>
+ <a href="/Institute-Managment-System-Spring-mvc/students">
+     Back
+ </a>
+
   </body>
 </html>
