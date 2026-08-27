@@ -1,0 +1,168 @@
+:root {
+    --ims-primary: #4f46e5;
+    --ims-primary-dark: #4338ca;
+    --ims-accent: #06b6d4;
+    --ims-bg: #f4f6fb;
+    --ims-card-radius: 16px;
+}
+
+* {
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--ims-bg);
+    color: #1f2333;
+      display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+}
+main {
+    flex: 1 0 auto;
+}
+
+
+/* ---------- Navbar ---------- */
+.ims-navbar {
+    background: linear-gradient(90deg, var(--ims-primary) 0%, var(--ims-primary-dark) 100%);
+    box-shadow: 0 2px 12px rgba(79, 70, 229, 0.25);
+}
+
+.ims-navbar .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: .2px;
+}
+
+.ims-navbar .navbar-brand span {
+    color: #a5f3fc;
+}
+
+.ims-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    transition: all .15s ease-in-out;
+}
+
+.ims-navbar .nav-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.ims-navbar .nav-link.active {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.ims-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ---------- Hero (home page) ---------- */
+.hero {
+    background: linear-gradient(120deg, var(--ims-primary) 0%, var(--ims-accent) 100%);
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.25);
+}
+
+/* ---------- Cards ---------- */
+.ims-card {
+    background: #fff;
+    border-radius: var(--ims-card-radius);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+a .ims-card:hover,
+.ims-card.hoverable:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+}
+
+.ims-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+/* ---------- Tables ---------- */
+.table-responsive.ims-card {
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #eef0fd;
+}
+
+table thead th {
+    font-weight: 600;
+    color: #3730a3;
+    border-bottom: none !important;
+    white-space: nowrap;
+}
+
+table tbody tr {
+    transition: background-color .1s ease-in-out;
+}
+
+table tbody tr:hover {
+    background-color: #f8f9ff;
+}
+
+/* ---------- Forms ---------- */
+.form-floating > .form-control:focus,
+.form-select:focus {
+    border-color: var(--ims-primary);
+    box-shadow: 0 0 0 .2rem rgba(79, 70, 229, .15);
+}
+
+.btn-check:checked + .btn-outline-primary {
+    background-color: var(--ims-primary);
+    border-color: var(--ims-primary);
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+    background-color: var(--ims-primary);
+    border-color: var(--ims-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--ims-primary-dark);
+    border-color: var(--ims-primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--ims-primary);
+    border-color: var(--ims-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--ims-primary);
+    border-color: var(--ims-primary);
+}
+
+/* ---------- Footer ---------- */
+.ims-footer {
+    background: #fff;
+    border-top: 1px solid rgba(15, 23, 42, 0.06);
+    color: #6b7280;
+}
+
+/* ---------- Misc ---------- */
+.badge.rounded-pill {
+    padding: .45em .85em;
+    font-weight: 500;
+}
